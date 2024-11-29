@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+//import Lifecycle from './Comp/Lifecycle';
+//import { useState } from 'react';
+//import Employee from './Comp/Employee';
+//import Fetchingdata from './Comp/Fetchingdata';
+//import Classdata from './Comp/Classdata'
+import KeyApi from './Comp/KeyApi';
 function App() {
+
+  //const [show, setShow] = useState(true)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* <h1>Learn Lifecycle of React Comp</h1>
+        <button className='btn btn-primary mt-2 mb-2' onClick={()=>setShow(!show)}>Unmount Comp</button>
+        {
+          show ?   <Lifecycle/> : <div>Comp Unmouted</div>
+        } */}
+        {/* <Employee/> */}
+        {/* <Fetchingdata/> */}
+        {/* <Classdata/> */}
+        <KeyApi/>
     </div>
   );
 }
